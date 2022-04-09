@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font awesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/index.css" />
+
+    <!-- custom icon link -->
+    <link rel="shortcut icon" href="images/icon.png" />
+
+    <!-- custom js file link -->
+    <script src="js/main.js" defer></script>
+
+    <title>The Brand</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!-- *header section start -->
+      <div class="header">
+        <div class="header__container">
+          <a class="logo" href="index.html" class="logo">
+            <img src="images/logo.png" alt="logotype" />
+          </a>
+
+          <nav class="navbar">
+            <ul class="menuList">
+              <li class="menu__item">
+                <a class="menu__link" href="catalog.html">men</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="catalog.html">women</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="catalog.html">kids</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="buttons">
+            <div class="fas fa-search" id="search_btn"></div>
+            <a href="registration.html" class="fas fa-user" id="user_btn"></a>
+            <div class="fas fa-shopping-cart" id="cart_btn">
+              <div class="cartIdentificator">
+                <span id="quantityItemsInCard">5</span>
+              </div>
+            </div>
+            <div class="fas fa-bars" id="menu_btn"></div>
+          </div>
+
+          <div class="searchForm">
+            <input type="search" id="search-box" placeholder="search here..." />
+            <label for="search-box" class="fas fa-search"></label>
+          </div>
+
+          <div class="cartContainer">
+            <div class="cartBox">
+              <div class="cartItem">
+                <a href="product.html">
+                  <img src="images/featured/image_item2.png" alt="item image" />
+                </a>
+                <div class="cartItem__info">
+                  <h3 class="cartItem__info__title">cart item 01</h3>
+                  <div class="cartItem__info__stars">
+                    <div class="fas fa-star"></div>
+                    <div class="fas fa-star"></div>
+                    <div class="fas fa-star"></div>
+                    <div class="fas fa-star"></div>
+                    <div class="fas fa-star"></div>
+                  </div>
+                  <div class="cartItem__info__price">
+                    <span id="quantity">1</span>
+                    X
+                    <span id="price">$250</span>
+                  </div>
+                </div>
+                <div class="fas fa-times-circle"></div>
+              </div>
+              <div class="cartItem">
+                <a href="product.html">
+                  <img src="images/featured/image_item1.png" alt="item image" />
+                </a>
+                <div class="cartItem__info">
+                  <h3 class="cartItem__info__title">cart item 02</h3>
+                  <div class="cartItem__info__stars">
+                    <div class="fas fa-star"></div>
+                    <div class="fas fa-star"></div>
+                    <div class="fas fa-star"></div>
+                    <div class="fas fa-star"></div>
+                    <div class="fas fa-star"></div>
+                  </div>
+                  <div class="cartItem__info__price">
+                    <span id="quantity">1</span>
+                    X
+                    <span id="price">$250</span>
+                  </div>
+                </div>
+                <div class="fas fa-times-circle"></div>
+              </div>
+            </div>
+
+            <div class="totalPrice">
+              <span class="totalPrice__text">total price</span>
+              <span id="total_price"> $500.00</span>
+            </div>
+
+            <a href="cart.html" class="cartBtn"> go to cart </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- *header section end -->
+
+      <main class="page">
+        <!-- *section banner start -->
+
+        <section class="banner">
+          <div class="banner__container">
+            <div class="banner__image">
+              <img src="images/header_banner.png" alt="banner" />
+            </div>
+            <div class="banner__textBlock">
+              <p class="banner__text big">THE BRAND</p>
+              <p class="banner__text">
+                OF LUXERIOUS
+                <span class="banner__text red">FASHION</span>
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- *section banner end -->
+
+        <!-- *section offers start -->
+
+        <section class="offers">
+          <div class="offers__container">
+            <div class="imageContainer__short">
+              <img src="images/offers_image01.png" alt="offer image" />
+              <div class="textContainer">
+                <span class="textContainer__text">30% off</span>
+                <span class="textContainer__text__bigred">for women</span>
+              </div>
+            </div>
+            <div class="imageContainer__short">
+              <img src="images/offers_image02.png" alt="offer image" />
+              <div class="textContainer">
+                <span class="textContainer__text">hot deal</span>
+                <span class="textContainer__text__bigred">for men</span>
+              </div>
+            </div>
+            <div class="imageContainer__short">
+              <img src="images/offers_image03.png" alt="offer image" />
+              <div class="textContainer">
+                <span class="textContainer__text">new arrivals</span>
+                <span class="textContainer__text__bigred">for kids</span>
+              </div>
+            </div>
+            <div class="imageContainer__long">
+              <img src="images/offers_image04.png" alt="offer image" />
+              <div class="textContainer">
+                <span class="textContainer__text"
+                  >luxirous & trendy trendy</span
+                >
+                <span class="textContainer__text__bigred">accesories</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- *section offers end -->
+
+        <!-- *section products start -->
+
+        <section class="products">
+          <div class="products__container">
+            <h3 class="products_heading">Featured Items</h3>
+            <p class="products_paragraph">
+              Shop for items based on what we featured in this week
+            </p>
+            <div class="productsBox">
+              <div class="productsItem">
+                <a href="product.html" class="productsItem imageContainer">
+                  <img
+                    src="images/featured/image_item1.png"
+                    alt="image product"
+                  />
+                </a>
+                <div class="productsItem__textContainer">
+                  <h4 class="productsItem__textContainer__heading">
+                    Lorem ipsum dolor sit.
+                  </h4>
+                  <p class="productsItem__textContainer__text">
+                    Known for her sculptural takes on traditional tailoring
+                  </p>
+                </div>
+                <div class="productsItem__button">
+                  <p class="productsItem__button_price">$52.00</p>
+                  <button id="add_cart">
+                    <i class="fas fa-shopping-cart"></i>Add to Cart
+                  </button>
+                </div>
+              </div>
+              <div class="productsItem">
+                <a href="product.html" class="productsItem imageContainer">
+                  <img
+                    src="images/featured/image_item2.png"
+                    alt="image product"
+                  />
+                </a>
+                <div class="productsItem__textContainer">
+                  <h4 class="productsItem__textContainer__heading">
+                    Lorem ipsum dolor sit.
+                  </h4>
+                  <p class="productsItem__textContainer__text">
+                    Known for her sculptural takes on traditional tailoring
+                  </p>
+                </div>
+                <div class="productsItem__button">
+                  <p class="productsItem__button_price">$52.00</p>
+                  <button id="add_cart">
+                    <i class="fas fa-shopping-cart"></i>Add to Cart
+                  </button>
+                </div>
+              </div>
+              <div class="productsItem">
+                <a href="product.html" class="productsItem imageContainer">
+                  <img
+                    src="images/featured/image_item3.png"
+                    alt="image product"
+                  />
+                </a>
+                <div class="productsItem__textContainer">
+                  <h4 class="productsItem__textContainer__heading">
+                    Lorem ipsum dolor sit.
+                  </h4>
+                  <p class="productsItem__textContainer__text">
+                    Known for her sculptural takes on traditional tailoring
+                  </p>
+                </div>
+                <div class="productsItem__button">
+                  <p class="productsItem__button_price">$52.00</p>
+                  <button id="add_cart">
+                    <i class="fas fa-shopping-cart"></i>Add to Cart
+                  </button>
+                </div>
+              </div>
+              <div class="productsItem">
+                <a href="product.html" class="productsItem imageContainer">
+                  <img
+                    src="images/featured/image_item4.png"
+                    alt="image product"
+                  />
+                </a>
+                <div class="productsItem__textContainer">
+                  <h4 class="productsItem__textContainer__heading">
+                    Lorem ipsum dolor sit.
+                  </h4>
+                  <p class="productsItem__textContainer__text">
+                    Known for her sculptural takes on traditional tailoring
+                  </p>
+                </div>
+                <div class="productsItem__button">
+                  <p class="productsItem__button_price">$52.00</p>
+                  <button id="add_cart">
+                    <i class="fas fa-shopping-cart"></i>Add to Cart
+                  </button>
+                </div>
+              </div>
+              <div class="productsItem">
+                <a href="product.html" class="productsItem imageContainer">
+                  <img
+                    src="images/featured/image_item5.png"
+                    alt="image product"
+                  />
+                </a>
+                <div class="productsItem__textContainer">
+                  <h4 class="productsItem__textContainer__heading">
+                    Lorem ipsum dolor sit.
+                  </h4>
+                  <p class="productsItem__textContainer__text">
+                    Known for her sculptural takes on traditional tailoring
+                  </p>
+                </div>
+                <div class="productsItem__button">
+                  <p class="productsItem__button_price">$52.00</p>
+                  <button id="add_cart">
+                    <i class="fas fa-shopping-cart"></i>Add to Cart
+                  </button>
+                </div>
+              </div>
+              <div class="productsItem">
+                <a href="product.html" class="productsItem imageContainer">
+                  <img
+                    src="images/featured/image_item6.png"
+                    alt="image product"
+                  />
+                </a>
+                <div class="productsItem__textContainer">
+                  <h4 class="productsItem__textContainer__heading">
+                    Lorem ipsum dolor sit.
+                  </h4>
+                  <p class="productsItem__textContainer__text">
+                    Known for her sculptural takes on traditional tailoring
+                  </p>
+                </div>
+                <div class="productsItem__button">
+                  <p class="productsItem__button_price">$52.00</p>
+                  <button id="add_cart">
+                    <i class="fas fa-shopping-cart"></i>Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <a href="catalog.html" class="products_allItems"
+              >Browse All Product</a
+            >
+          </div>
+        </section>
+
+        <!-- *section products end -->
+
+        <!-- *section guarantees start -->
+
+        <section class="guarantees">
+          <div class="guarantees__container">
+            <div class="guarenteesBox">
+              <div class="guarenteesBox__item">
+                <div class="guarenteesBox__item_imageContainer">
+                  <img src="images/delivery.png" alt="delivery" />
+                </div>
+                <div class="guarenteesBox__item_textContainer">
+                  <h4 class="guarenteesBox__item_textContainer_heading">
+                    Free Delivery
+                  </h4>
+                  <p class="guarenteesBox__item_textContainer_text">
+                    Worldwide delivery on all. Authorit tively morph
+                    next-generation innov tion with extensive models.
+                  </p>
+                </div>
+              </div>
+              <div class="guarenteesBox__item">
+                <div class="guarenteesBox__item_imageContainer">
+                  <img src="images/sales.png" alt="delivery" />
+                </div>
+                <div class="guarenteesBox__item_textContainer">
+                  <h4 class="guarenteesBox__item_textContainer_heading">
+                    Free Delivery
+                    <!-- Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Facere, cum? -->
+                  </h4>
+                  <p class="guarenteesBox__item_textContainer_text">
+                    Worldwide delivery on all. Authorit tively morph
+                    next-generation innov tion with extensive models.
+                  </p>
+                </div>
+              </div>
+
+              <div class="guarenteesBox__item">
+                <div class="imageContainer">
+                  <img src="images/quality.png" alt="sales" />
+                </div>
+                <div class="guarenteesBox__item_textContainer">
+                  <h4 class="guarenteesBox__item_textContainer_heading">
+                    Sales & discounts
+                  </h4>
+                  <p class="guarenteesBox__item_textContainer_text">
+                    Worldwide delivery on all. Authorit tively morph
+                    next-generation innov tion with extensive models.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- *section guarantees end -->
+
+        <!-- *section review-subscribe start -->
+
+        <section class="reviewsAndSub">
+          <div class="reviewsAndSub__container">
+            <div class="review">
+              <div class="review__imageContainer">
+                <img src="images/Intersect.png" alt="user_photo" />
+              </div>
+              <div class="review__textContainer">
+                <p class="review__textContainer_text">
+                  “Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+                  <span> a pulvinar purus condimentum“</span>
+                </p>
+              </div>
+            </div>
+            <div class="subscribeForm">
+              <p class="subscribeForm__text">
+                <span class="subscribeForm__text_bold">SUBSCRIBE</span>
+                FOR OUR NEWLETTER AND PROMOTION
+              </p>
+              <form action="#" id="form">
+                <input id="email" type="email" placeholder="Enter your email" />
+                <button id="btn_sub" type="submit">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <!-- *section review-subscribe end -->
+      </main>
+
+      <!-- *section footer start -->
+
+      <footer class="footer">
+        <div class="footer__container">
+          <p class="copyright">© 2021 Brand All Rights Reserved.</p>
+          <nav class="footerMenu">
+            <a class="footerMenu__link" href="#"
+              ><i class="fab fa-facebook-f"></i>
+            </a>
+            <a class="footerMenu__link" href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a class="footerMenu__link" href="#">
+              <i class="fab fa-pinterest-p"></i>
+            </a>
+            <a class="footerMenu__link" href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </nav>
+        </div>
+      </footer>
+
+      <!-- *section footer end -->
+    </div>
+  </body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font awesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/registration.css" />
+
+    <!-- custom icon link -->
+    <link rel="shortcut icon" href="images/icon.png" />
+
+    <!-- custom js file link -->
+    <script src="js/main.js" defer></script>
+    <script src="js/registration.js" defer></script>
+
+    <title>Registration</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- *header section start -->
+
+      <div class="header">
+        <div class="header__container">
+          <a class="logo" href="index.html" class="logo">
+            <img src="images/logo.png" alt="logotype" />
+          </a>
+
+          <nav class="navbar">
+            <ul class="menuList">
+              <li class="menu__item">
+                <a class="menu__link" href="catalog.html">men</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="catalog.html">women</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="catalog.html">kids</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="buttons">
+            <div class="fas fa-search" id="search_btn"></div>
+            <a href="registration.html" class="fas fa-user" id="user_btn"></a>
+            <div class="fas fa-shopping-cart" id="cart_btn">
+              <div class="cartIdentificator">
+                <span id="quantityItemsInCard">5</span>
+              </div>
+            </div>
+            <div class="fas fa-bars" id="menu_btn"></div>
+          </div>
+
+          <div class="searchForm">
+            <input type="search" id="search-box" placeholder="search here..." />
+            <label for="search-box" class="fas fa-search"></label>
+          </div>
+
+          <div class="cartContainer">
+            <div class="cartBox">
+              <div class="cartItem">
+                <a href="product.html">
+                  <img src="images/featured/image_item2.png" alt="item image" />
+                </a>
+                <div class="cartItem__info">
+                  <h3 class="cartItem__info__title">cart item 01</h3>
+                  <div class="cartItem__info__stars">
+                    <div class="fas fa-star"></div>
+                    <div class="fas fa-star"></div>
+                    <div class="fas fa-star"></div>
+                    <div class="fas fa-star"></div>
+                    <div class="fas fa-star"></div>
+                  </div>
+                  <div class="cartItem__info__price">
+                    <span id="quantity">1</span>
+                    X
+                    <span id="price">$250</span>
+                  </div>
+                </div>
+                <div class="fas fa-times-circle"></div>
+              </div>
+              <div class="cartItem">
+                <a href="product.html">
+                  <img src="images/featured/image_item1.png" alt="item image" />
+                </a>
+                <div class="cartItem__info">
+                  <h3 class="cartItem__info__title">cart item 02</h3>
+                  <div class="cartItem__info__stars">
+                    <div class="fas fa-star"></div>
+                    <div class="fas fa-star"></div>
+                    <div class="fas fa-star"></div>
+                    <div class="fas fa-star"></div>
+                    <div class="fas fa-star"></div>
+                  </div>
+                  <div class="cartItem__info__price">
+                    <span id="quantity">1</span>
+                    X
+                    <span id="price">$250</span>
+                  </div>
+                </div>
+                <div class="fas fa-times-circle"></div>
+              </div>
+            </div>
+
+            <div class="totalPrice">
+              <span class="totalPrice__text">total price</span>
+              <span id="total_price"> $500.00</span>
+            </div>
+
+            <a href="cart.html" class="cartBtn"> go to cart </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- *header section end -->
+
+      <main class="page">
+        <!-- *section navigation start -->
+        <section class="navigation">
+          <div class="navigation__container">
+            <a href="registration.html" id="current">registration</a>
+          </div>
+        </section>
+        <!-- *section navigation end -->
+
+        <!-- *section login start -->
+        <section class="login">
+          <div class="login__container">
+            <form action="#" class="loginForm">
+              <div class="loginForm__information">
+                <h4 class="loginForm__information_name">Your name</h4>
+                <input type="text" placeholder="First name" id="firstName" />
+                <input type="text" placeholder="Second name" id="secondName" />
+              </div>
+              <div class="loginForm__gender">
+                <label for="gender">
+                  <input type="radio" name="gender" id="male" />Male
+                </label>
+                <label for="gender">
+                  <input type="radio" name="gender" id="female" />Female
+                </label>
+              </div>
+              <div class="loginForm__information">
+                <h4 class="loginForm__information_name">Login details</h4>
+                <input
+                  type="email"
+                  placeholder="Email"
+                  id="emailInform"
+                  autocomplete="username"
+                />
+                <input
+                  type="password"
+                  placeholder="Password"
+                  id="password"
+                  autocomplete="current-password"
+                />
+                <p>
+                  Please use 8 or more characters, with at least 1 number and a
+                  mixture of uppercase and lowercase letters
+                </p>
+              </div>
+              <button id="formSubmit" type="submit">
+                join now<i class="fas fa-arrow-right"></i>
+              </button>
+            </form>
+            <div class="loyalty">
+              <h3 class="loyalty__heading">loaylty has its perks</h3>
+              <p class="loyalty__text">
+                Get in on the loyalty program where you can earn points and
+                unlock serious perks. Starting with these as soon as you join:
+              </p>
+              <ul class="loyalty__list">
+                <li><i class="fas fa-check"></i>15% off welcome offer</li>
+                <li>
+                  <i class="fas fa-check"></i>Free shipping, returns and
+                  exchanges on all orders
+                </li>
+                <li>
+                  <i class="fas fa-check"></i>$10 off a purchase on your
+                  birthday
+                </li>
+                <li><i class="fas fa-check"></i>Early access to products</li>
+                <li><i class="fas fa-check"></i>Exclusive offers & rewards</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <!-- *section login end -->
+
+        <!-- *section review-subscribe start -->
+        <section class="reviewsAndSub">
+          <div class="reviewsAndSub__container">
+            <div class="review">
+              <div class="review__imageContainer">
+                <img src="images/Intersect.png" alt="user_photo" />
+              </div>
+              <div class="review__textContainer">
+                <p class="review__textContainer_text">
+                  “Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+                  <span> a pulvinar purus condimentum“</span>
+                </p>
+              </div>
+            </div>
+            <div class="subscribeForm">
+              <p class="subscribeForm__text">
+                <span class="subscribeForm__text_bold">SUBSCRIBE</span>
+                FOR OUR NEWLETTER AND PROMOTION
+              </p>
+              <form action="#" id="form">
+                <input id="email" type="email" placeholder="Enter your email" />
+                <button id="btn_sub" type="submit">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </section>
+        <!-- *section review-subscribe end -->
+      </main>
+
+      <!-- *section footer start -->
+
+      <footer class="footer">
+        <div class="footer__container">
+          <p class="copyright">© 2021 Brand All Rights Reserved.</p>
+          <nav class="footerMenu">
+            <a class="footerMenu__link" href="#"
+              ><i class="fab fa-facebook-f"></i>
+            </a>
+            <a class="footerMenu__link" href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a class="footerMenu__link" href="#">
+              <i class="fab fa-pinterest-p"></i>
+            </a>
+            <a class="footerMenu__link" href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </nav>
+        </div>
+      </footer>
+
+      <!-- *section footer end -->
+    </div>
+  </body>
+</html>

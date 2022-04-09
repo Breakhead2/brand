@@ -1,0 +1,128 @@
+//Переменные
+$bgColor: #222222;
+$mainColor: #ffffff;
+$secondColor: #F16D7F;
+$hoverColor: #F1E4E6;
+
+/*    section review&subscrive start    */
+
+.reviewsAndSub {
+    position: relative;
+    background-image: url("/images/form_bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__container {
+        position: relative;
+        display: grid;
+        align-items: center;
+        grid-template: minmax(auto, 448px) / 1fr 1fr ;
+    }
+}
+.reviewsAndSub::before{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    content: "";
+    background-color: rgba(244, 244, 244, 0.7);
+}
+.review {
+    justify-self: start;
+    display: grid;
+    min-height: 225px;
+    justify-items: center;
+    grid-template: auto 1fr / minmax(auto, 360px);
+
+    &__textContainer {
+        margin-top: 30px;
+        text-align: center;
+        &_text {
+            font-size: 20px;
+            line-height: 24px;
+            span {
+                font-style: italic;
+            }
+        }
+    }
+}
+.subscribeForm {
+    justify-self: center;
+    justify-items: center;
+    display: grid;
+    grid-template: 1fr auto / auto;
+    &__text {
+        display: grid;
+        text-align: center;
+        font-size: 18px;
+        line-height: 30px;
+        &_bold {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 38px;
+        }
+    }
+    #form{
+        margin-top: 32px;
+        height: 49px;
+        display: flex;
+        width: 100%;
+        #email{
+            height: 100%;
+            width: 100%;
+            border-radius: 25px 0 0 25px;
+            background-color: #E1E1E1;
+            padding: 7px 22px;
+            color: $bgColor;
+        }
+        #btn_sub{
+            background-color: $secondColor;
+            height: 100%;
+            padding: 0 22px;
+            color: $mainColor;
+            border-radius: 0 25px 25px 0;
+        }
+    }
+}
+
+/*    media queries    */
+
+@media (max-width: $md2) {
+    .reviewsAndSub {
+        &__container {
+            padding-top: 64px;
+            padding-bottom: 140px;
+            justify-content: center;
+            grid-template: auto auto / 1fr ;
+        }
+    }
+    .review {
+        justify-self: center;
+    }
+    .subscribeForm{
+        margin-top: 48px;
+    }
+}
+@media (max-width: $md3) {
+    .reviewsAndSub {
+        &__container {
+            padding-bottom: 110px;
+        }
+    }
+    .review {
+        &__textContainer {
+            &_text {
+                font-size: 18px;
+                line-height: 21px;
+            }
+        }
+    }
+    .subscribeForm{
+        grid-template: 1fr auto / 1fr;
+        width: 100%;
+        &__text {
+            font-size: 14px;
+            line-height: 21px;
+        }
+    }
+}
+/*    section review&subscrive end    */

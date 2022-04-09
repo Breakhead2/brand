@@ -1,0 +1,158 @@
+// Брейкпоинты
+$md1: 1024 + px; //ПК, ноутбуки, некоторые планшеты в горизонтальном положении
+$md2: 768 + px; // Планшеты, некоторые телефоны в горизонтальном положении
+$md3: 425+ px; // Телефоны L
+$md4: 320 + px; // Телефоны S
+
+//Переменные
+$bgColor: #222222;
+$mainColor: #ffffff;
+$secondColor: #F16D7F;
+$hoverColor: #F1E4E6;
+
+.navigation {
+    background-color: #F8F3F4;
+    &__container {
+        display: grid;
+        grid-template: minmax(auto, 148px) / 1fr 1fr;
+        justify-content: space-between;
+        align-items: center;
+        #current {
+            font-size: 24px;
+            line-height: 29px;
+            color: $secondColor;
+            text-transform: uppercase;
+        }
+    }
+    
+}
+/* media queries for navigation start */
+
+@media (max-width:$md3) {
+    .navigation {
+        &__container {
+            padding: 50px 0 69px 0;
+            grid-template: auto / 1fr;
+            #current {
+                place-self: center;
+            }
+        }
+    }
+}
+
+/* media queries for navigation end */
+
+.login{
+    margin: 64px 0 96px 0;
+    &__container{
+        display: grid;
+        grid-template: auto / minmax(auto, 360px) minmax(22px, 1fr) minmax(auto, 652px);
+        .loginForm{
+            grid-column: 1 /2;
+            &__information{
+                display: grid;
+                grid-template: auto/ 1fr;
+                row-gap: 20px;
+                &_name{
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 19px;
+                }
+                input {
+                    width: 100%;
+                    min-height: 44px;
+                    padding: 13px 17px;
+                    border: 1px solid #A4A4A4;
+                    font-size: 13px;
+                }
+                p {
+                    font-size: 13px;
+                    line-height: 16px;
+                    color: #B1B1B1;
+                }
+            }
+            &__gender{
+                margin: 31px 0 33px 0;
+                display: flex;
+                label{
+                    margin-right: 20px;
+                    font-weight: 300;
+                    display: flex;
+                    align-items: center;
+
+                    input {
+                        width: 17px;
+                        height: 17px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+            #formSubmit{
+                margin-top: 39px;
+                padding: 16px 29px;
+                background-color: $secondColor;
+                color: $mainColor;
+                border: 1px solid $secondColor;
+                text-transform: uppercase;
+                transition: all, .3s;
+                i {
+                    margin-left: 20px;
+                }
+            }
+        }
+        .loyalty{
+            grid-column: 3 / 4;
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 29px;
+            &__heading{
+                font-weight: 300;
+                text-transform: uppercase;
+                margin-bottom: 22px;
+            }
+            p{
+                margin-bottom: 21px;
+            }
+            &__list{
+                display: grid;
+                grid-template: auto / 1fr;
+                row-gap: 16px;
+                i {
+                    margin-right: 22px;
+                }
+            }
+        }
+    }
+}
+
+/*  media queries for login section   */
+
+@media (max-width:$md2) {
+    .login{
+        margin: 40px 0 96px 0;
+        &__container{
+            .loyalty{
+                font-size: 16px;
+                line-height: 19px;
+                &__heading{
+                    margin-bottom: 32px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:$md3) {
+    .login{
+        &__container{
+            display: grid;
+            grid-template: auto / 1fr;
+            .loyalty{
+                margin-top: 40px;
+                grid-column: 1 / 2;
+            }
+        }
+    }
+}
+
+@import "index_components/review";

@@ -1,0 +1,59 @@
+//Переменные
+$bgColor: #222222;
+$mainColor: #ffffff;
+$secondColor: #F16D7F;
+$hoverColor: #F1E4E6;
+
+/*   section guarantees start   */
+.guarantees {
+    margin-top: 95px;
+    background-color: $bgColor;
+    color: $mainColor;
+    &__container {
+        .guarenteesBox{
+            padding: 104px 0;
+            justify-content: space-between;
+            display: grid;
+            gap: 30px;
+            grid-template: minmax(134px, auto) / repeat(3, minmax(auto, 360px));
+            &__item{
+                display: grid;
+                grid-template:  1fr auto / 1fr;
+                justify-items: center;
+                &_imageContainer{
+                    align-self: start;
+                }
+                &_textContainer{
+                    align-self: start;
+                    text-align: center;
+                    &_heading{
+                        font-size: 20px;
+                        line-height: 24px;
+                    }
+                    &_text{
+                        margin-top: 16px;
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*   media quaries    */
+
+@media (max-width: $md2){
+    .guarantees {
+        &__container {
+            .guarenteesBox{
+                padding: 64px 0;
+                justify-content: center;
+                gap: 50px;
+                grid-template: repeat(3, minmax(auto, 134px)) / minmax(auto, 360px);
+            }
+        }  
+    }
+}
+
+
+/*   section guarantees end   */

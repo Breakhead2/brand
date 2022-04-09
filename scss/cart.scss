@@ -1,0 +1,332 @@
+// Брейкпоинты
+$md1: 1024 + px; //ПК, ноутбуки, некоторые планшеты в горизонтальном положении
+$md2: 768 + px; // Планшеты, некоторые телефоны в горизонтальном положении
+$md3: 425+ px; // Телефоны L
+$md4: 320 + px; // Телефоны S
+
+//Переменные
+$bgColor: #222222;
+$mainColor: #ffffff;
+$secondColor: #F16D7F;
+$hoverColor: #F1E4E6;
+
+.navigation {
+    background-color: #F8F3F4;
+    &__container {
+        display: grid;
+        grid-template: minmax(auto, 148px) / 1fr 1fr;
+        justify-content: space-between;
+        align-items: center;
+        #current {
+            font-size: 24px;
+            line-height: 29px;
+            color: $secondColor;
+            text-transform: uppercase;
+        }
+    }
+    
+}
+/* media queries for navigation start */
+
+@media (max-width:$md3) {
+    .navigation {
+        &__container {
+            padding: 50px 0 69px 0;
+            grid-template: auto / 1fr;
+            #current {
+                place-self: center;
+            }
+        }
+    }
+}
+
+/* media queries for navigation end */
+
+.cards {
+    margin: 96px 0 128px 0;
+    &__container {
+        display: grid;
+        grid-template: auto / minmax(530px, 652px) minmax(20px, 1fr) minmax(auto, 360px);
+        justify-content: space-between;
+        .cardBox {
+            grid-column: 1 / 2;
+            display: grid;
+            grid-template: auto / 1fr;
+            &__cards{
+                display: grid;
+                grid-template:  auto / 1fr;
+                row-gap: 40px;
+                &_item {
+                    align-items: start;
+                    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+                    display: grid;
+                    grid-template-columns: minmax(auto, 1fr) 1fr auto;
+                    &_imageContainer{
+                        max-width: 262px;
+                        img{
+                            width: 100%;
+                            max-height: 100%;
+                            object-fit: contain;
+                        }
+                    }
+                    &_information{
+                        padding: 22px 31px;
+                        &_title{
+                            font-size: 24px;
+                            text-transform: uppercase;
+                            line-height: 29px;
+                        }
+                        &_list{
+                            margin-top: 42px;
+                            display: grid;
+                            grid-template: auto / 1fr;
+                            row-gap: 6px;
+                            li {
+                                font-size: 22px;
+                                line-height: 26px;
+                                color: #575757;
+                                #size{
+                                    text-transform: uppercase;
+                                }
+                                input {
+                                    margin-left: 24px;
+                                    height: inherit;
+                                    text-align: center;
+                                    font-size: inherit;
+                                    width: 30%;
+                                    border: 1px solid #EAEAEA;
+                                }
+                            }
+                        }
+                    }
+                    &_btnDelete{
+                        font-size: 24px;
+                        margin: 20px 20px 0 0;
+                        transition: all, .3s;
+                    }
+                    &_btnDelete:hover{
+                        color: $secondColor;
+                    }
+                }
+            }
+            &__buttons{
+                display: grid;
+                margin-top: 72px;
+                &_btnClear{
+                    transition: all, .3s;
+                    justify-self: center;
+                    text-transform: uppercase;
+                    font-weight: 300;
+                    padding: 17px 39px;
+                    border: 1px solid #A4A4A4
+                }
+                &_btnClear:hover{
+                    color: white;
+                    background-color: $secondColor;
+                }
+            }
+        }
+        .formBox{
+            grid-column: 3 / 4;
+            display: grid;
+            grid-template: minmax(auto, 306px) / 1fr;
+            row-gap: 40px;
+            &__form{
+                align-self: center;
+                &_title{
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 19px;
+                    text-transform: uppercase;
+                }
+                &_list{
+                    margin-top: 20px;
+                    display: grid;
+                    grid-template: auto / 1fr;
+                    row-gap: 20px;
+                    li {
+                        min-height: 45px;
+                        input {
+                            padding: 13px 17px;
+                            width: 100%;
+                            height: 100%;
+                            border: 1px solid #A4A4A4;
+                            font-size: 13px;
+                            
+                        }
+                    }
+                }
+                &_btn{
+                    margin-top: 25px;
+                    font-size: 11px;
+                    line-height: 13px;
+                    font-weight: 300;
+                    padding: 10px 15px;
+                    text-transform: uppercase;
+                    border: 1px solid #A4A4A4;
+                    transition: all, .3s;
+                }
+                &_btn:hover{
+                    color: $mainColor;
+                    background-color: $secondColor;
+                }
+            }
+            &__check{
+                height: 214px;
+                background: #F5F3F3;
+                padding: 42px;
+                &_priceBlock{
+                    text-align: right;
+                    border-bottom: 1px solid #E2E2E2;;
+                    padding-bottom: 21px;
+                    &_discount{
+                        font-size: 12px;
+                        line-height: 14px;
+                        text-transform: uppercase;
+                        color: #4A4A4A;
+                        #discount{
+                            color: $secondColor;
+
+                        }
+                    }
+                    &_totalPrice{
+                        margin-top: 12px;
+                        font-size: 16px;
+                        line-height: 19px; 
+                        text-transform: uppercase;
+                        #totalPrice{
+                            color: $secondColor;
+                            font-weight: 700;
+                        }
+                    }
+                }
+                &_btn{
+                    width: 100%;
+                    margin-top: 17px;
+                    font-size: 16px;
+                    font-weight: 300;
+                    line-height: 19px;
+                    padding: 15px 41px;
+                    color: $mainColor;
+                    background-color: $secondColor;
+                    text-transform: uppercase;
+                    border: 1px solid #A4A4A4;
+                    transition: all, .3s;
+                }
+                &_btn:hover{
+                    color: $secondColor;
+                    background-color: $mainColor;
+                }
+            }
+        }
+    }
+}
+
+/*  media queries for cards section start  */
+@media (max-width:$md2) {
+    .cards {
+        margin: 59px 0 128px 0;
+        &__container {
+            grid-template: auto / 1fr;
+            justify-content: center;
+            .cardBox {
+                &__cards{
+                    &_item {
+                    align-items: start;
+                    grid-template-columns: 1fr 1fr auto;
+                    }
+                }
+                &__buttons{
+                    margin-top: 62px;
+                }
+            }
+            .formBox{
+                margin-top: 64px;
+            grid-column: 1 / 2;
+            display: grid;
+            grid-template: minmax(auto, 306px) / repeat(2, minmax(auto, 360px));
+            justify-content: space-between;
+            align-items: center;
+            }
+        }
+    }
+}
+
+@media (max-width:$md3) {
+    .cards {
+        margin: 39px 0 96px 0;
+        &__container {
+            .cardBox {
+                &__cards{
+                    grid-template: auto / 1fr;
+                    &_item {
+                        &_information{
+                            padding: 13px 17px;
+                            &_title{
+                                font-size: 16px;
+                                line-height: 19px;
+                            }
+                            &_list{
+                                margin-top:25px;
+                                row-gap: 4px;
+                                li {
+                                    font-size: 14px;
+                                    line-height: 17px;
+                                }
+                            }
+                        }
+                        &_btnDelete{
+                            font-size: 24px;
+                            margin: 20px 20px 0 0;
+                            transition: all, .3s;
+                        }
+                    }
+                }
+                &__buttons{
+                    margin-top: 39px;
+                }
+            }
+            .formBox{
+                margin-top: 48px;
+                grid-column: 1 / 2;
+                display: grid;
+                grid-template: auto / 1fr;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+@media (max-width:$md4) {
+    .cards {
+        &__container {
+            .cardBox {
+                &__cards{
+                    &_item {
+                        &_information{
+                            padding: 4px 12px;
+                            &_title{
+                                font-size: 14px;
+                                line-height: 16px;
+                            }
+                            &_list{
+                                li {
+                                    font-size: 14px;
+                                    line-height: 16px;
+                                }
+                            }
+                        }
+                        &_btnDelete{
+                            font-size: 18px;
+                            margin: 8px 10px 0 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*  media queries for cards section end  */
+
+@import "index_components/review";

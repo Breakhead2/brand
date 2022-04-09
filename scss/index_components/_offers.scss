@@ -1,0 +1,74 @@
+//Переменные
+$mainColor: #ffffff;
+$secondColor: #F16D7F;
+
+/*    section offers start    */
+.offers {
+    margin-top: 65px;
+    &__container {
+        display: grid;
+        grid-template: auto / 1fr 1fr 1fr;
+        gap: 30px;
+    }
+}
+.imageContainer {
+    &__short{
+        display: grid;
+        position: relative; 
+    }
+    &__short img {
+        width: 100%;
+        filter: brightness(50%);
+    }
+
+    &__long {
+        grid-column: 1 / 4;
+        position: relative; 
+        display: grid;
+    }
+    &__long img {
+        width: 100%;
+        filter: brightness(0.3);
+    }  
+}
+.textContainer{
+    display: grid;
+    text-align: center;
+    place-self: center;
+    position: absolute;
+    &__text{
+        line-height: 19px;
+        text-transform: uppercase;
+        font-weight: 400;
+        color: $mainColor;
+        &__bigred{
+            text-transform: uppercase;
+            font-size: 24px;
+            line-height: 29px;
+            color: $secondColor;
+        }
+    }
+}
+
+/*    medaia queries    */
+
+@media (max-width: $md3){
+    .offers {
+        &__container {
+            grid-template: auto / 1fr;
+        }
+    }
+    .imageContainer {
+        &__long {
+            grid-column: 1 / 1;
+            height: 111px;
+        }
+        &__long img {
+            object-fit: cover;
+            height: 100%;
+        }  
+    }
+
+}
+
+/*    section offers end    */

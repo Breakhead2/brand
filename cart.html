@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font awesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/cart.css" />
+
+    <!-- custom icon link -->
+    <link rel="shortcut icon" href="images/icon.png" />
+
+    <!-- custom js file link -->
+    <script src="js/main.js" defer></script>
+    <script src="js/cart.js" defer></script>
+
+    <title>Cart</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- *header section start -->
+
+      <div class="header">
+        <div class="header__container">
+          <a class="logo" href="index.html" class="logo">
+            <img src="images/logo.png" alt="logotype" />
+          </a>
+
+          <nav class="navbar">
+            <ul class="menuList">
+              <li class="menu__item">
+                <a class="menu__link" href="catalog.html">men</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="catalog.html">women</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="catalog.html">kids</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="buttons">
+            <div class="fas fa-search" id="search_btn"></div>
+            <a href="registration.html" class="fas fa-user" id="user_btn"></a>
+            <div class="fas fa-shopping-cart" id="cart_btn">
+              <div class="cartIdentificator">
+                <span id="quantityItemsInCard">5</span>
+              </div>
+            </div>
+            <div class="fas fa-bars" id="menu_btn"></div>
+          </div>
+
+          <div class="searchForm">
+            <input type="search" id="search-box" placeholder="search here..." />
+            <label for="search-box" class="fas fa-search"></label>
+          </div>
+
+          <div class="cartContainer">
+            <div class="cartBox">
+              <div class="cartItem">
+                <a href="product.html">
+                  <img src="images/featured/image_item2.png" alt="item image" />
+                </a>
+                <div class="cartItem__info">
+                  <h3 class="cartItem__info__title">cart item 01</h3>
+                  <div class="cartItem__info__stars">
+                    <div class="fas fa-star"></div>
+                    <div class="fas fa-star"></div>
+                    <div class="fas fa-star"></div>
+                    <div class="fas fa-star"></div>
+                    <div class="fas fa-star"></div>
+                  </div>
+                  <div class="cartItem__info__price">
+                    <span id="quantity">1</span>
+                    X
+                    <span id="price">$250</span>
+                  </div>
+                </div>
+                <div class="fas fa-times-circle"></div>
+              </div>
+              <div class="cartItem">
+                <a href="product.html">
+                  <img src="images/featured/image_item1.png" alt="item image" />
+                </a>
+                <div class="cartItem__info">
+                  <h3 class="cartItem__info__title">cart item 02</h3>
+                  <div class="cartItem__info__stars">
+                    <div class="fas fa-star"></div>
+                    <div class="fas fa-star"></div>
+                    <div class="fas fa-star"></div>
+                    <div class="fas fa-star"></div>
+                    <div class="fas fa-star"></div>
+                  </div>
+                  <div class="cartItem__info__price">
+                    <span id="quantity">1</span>
+                    X
+                    <span id="price">$250</span>
+                  </div>
+                </div>
+                <div class="fas fa-times-circle"></div>
+              </div>
+            </div>
+
+            <div class="totalPrice">
+              <span class="totalPrice__text">total price</span>
+              <span id="total_price"> $500.00</span>
+            </div>
+
+            <a href="cart.html" class="cartBtn"> go to cart </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- *header section end -->
+
+      <main class="page">
+        <!-- *section navigation start -->
+        <section class="navigation">
+          <div class="navigation__container">
+            <a href="cart.html" id="current">shopping cart</a>
+          </div>
+        </section>
+        <!-- *section navigation end -->
+
+        <!-- *section cards start -->
+
+        <section class="cards">
+          <div class="cards__container">
+            <div class="cardBox">
+              <div class="cardBox__cards">
+                <div class="cardBox__cards_item">
+                  <a
+                    href="product.html"
+                    class="cardBox__cards_item_imageContainer"
+                  >
+                    <img
+                      src="images/image items/image_item1.png"
+                      alt="item_image"
+                    />
+                  </a>
+                  <div class="cardBox__cards_item_information">
+                    <h3 class="cardBox__cards_item_information_title">
+                      mango people t-shirt
+                    </h3>
+                    <ul class="cardBox__cards_item_information_list">
+                      <li>Price: $<span id="price">250</span></li>
+                      <li>Color: <span id="color">Red</span></li>
+                      <li>Size: <span id="size">xl</span></li>
+                      <li>
+                        Quantity:
+                        <input type="number" value="1" id="quantity" />
+                      </li>
+                    </ul>
+                  </div>
+                  <button class="cardBox__cards_item_btnDelete">
+                    <i class="fas fa-times-circle"></i>
+                  </button>
+                </div>
+                <div class="cardBox__cards_item">
+                  <a
+                    href="product.html"
+                    class="cardBox__cards_item_imageContainer"
+                  >
+                    <img
+                      src="images/image items/image_item2.png"
+                      alt="item_image"
+                    />
+                  </a>
+                  <div class="cardBox__cards_item_information">
+                    <h3 class="cardBox__cards_item_information_title">
+                      mango people t-shirt
+                    </h3>
+                    <ul class="cardBox__cards_item_information_list">
+                      <li>Price: $<span id="price">250</span></li>
+                      <li>Color: <span id="color">Blue</span></li>
+                      <li>Size: <span id="size">M</span></li>
+                      <li>
+                        Quantity:
+                        <input type="number" value="1" id="quantity" />
+                      </li>
+                    </ul>
+                  </div>
+                  <button class="cardBox__cards_item_btnDelete">
+                    <i class="fas fa-times-circle"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="cardBox__buttons">
+                <button class="cardBox__buttons_btnClear">
+                  clear shopping cart
+                </button>
+              </div>
+            </div>
+            <div class="formBox">
+              <form action="#" class="formBox__form">
+                <h4 class="formBox__form_title">shopping address</h4>
+                <ul class="formBox__form_list">
+                  <li><input type="text" placeholder="City" /></li>
+                  <li><input type="text" placeholder="State" /></li>
+                  <li><input type="number" placeholder="Postcode" /></li>
+                </ul>
+                <button class="formBox__form_btn">get a quote</button>
+              </form>
+              <div class="formBox__check">
+                <div class="formBox__check_priceBlock">
+                  <p class="formBox__check_priceBlock_discount">
+                    Discount: <span id="discount">15%</span>
+                  </p>
+                  <p class="formBox__check_priceBlock_totalPrice">
+                    Total price: <span id="totalPrice">$500</span>
+                  </p>
+                </div>
+                <button class="formBox__check_btn" id="btn_checkout">
+                  proceed to checkout
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- *section cardBox end -->
+
+        <!-- *section review-subscribe start -->
+
+        <section class="reviewsAndSub">
+          <div class="reviewsAndSub__container">
+            <div class="review">
+              <div class="review__imageContainer">
+                <img src="images/Intersect.png" alt="user_photo" />
+              </div>
+              <div class="review__textContainer">
+                <p class="review__textContainer_text">
+                  “Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+                  <span> a pulvinar purus condimentum“</span>
+                </p>
+              </div>
+            </div>
+            <div class="subscribeForm">
+              <p class="subscribeForm__text">
+                <span class="subscribeForm__text_bold">SUBSCRIBE</span>
+                FOR OUR NEWLETTER AND PROMOTION
+              </p>
+              <form action="#" id="form">
+                <input id="email" type="email" placeholder="Enter your email" />
+                <button id="btn_sub" type="submit">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <!-- *section review-subscribe end -->
+      </main>
+
+      <!-- *section footer start -->
+
+      <footer class="footer">
+        <div class="footer__container">
+          <p class="copyright">© 2021 Brand All Rights Reserved.</p>
+          <nav class="footerMenu">
+            <a class="footerMenu__link" href="#"
+              ><i class="fab fa-facebook-f"></i>
+            </a>
+            <a class="footerMenu__link" href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a class="footerMenu__link" href="#">
+              <i class="fab fa-pinterest-p"></i>
+            </a>
+            <a class="footerMenu__link" href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </nav>
+        </div>
+      </footer>
+
+      <!-- *section footer end -->
+    </div>
+  </body>
+</html>

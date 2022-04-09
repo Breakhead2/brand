@@ -1,0 +1,405 @@
+.navigation {
+  background-color: #F8F3F4;
+}
+.navigation__container {
+  display: grid;
+  grid-template: minmax(auto, 148px)/1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+}
+.navigation__container #current {
+  font-size: 24px;
+  line-height: 29px;
+  color: #F16D7F;
+  text-transform: uppercase;
+}
+
+/* media queries for navigation start */
+@media (max-width: 425px) {
+  .navigation__container {
+    padding: 50px 0 69px 0;
+    grid-template: auto/1fr;
+  }
+  .navigation__container #current {
+    place-self: center;
+  }
+}
+/* media queries for navigation end */
+.cards {
+  margin: 96px 0 128px 0;
+}
+.cards__container {
+  display: grid;
+  grid-template: auto/minmax(530px, 652px) minmax(20px, 1fr) minmax(auto, 360px);
+  justify-content: space-between;
+}
+.cards__container .cardBox {
+  grid-column: 1/2;
+  display: grid;
+  grid-template: auto/1fr;
+}
+.cards__container .cardBox__cards {
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 40px;
+}
+.cards__container .cardBox__cards_item {
+  align-items: start;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  display: grid;
+  grid-template-columns: minmax(auto, 1fr) 1fr auto;
+}
+.cards__container .cardBox__cards_item_imageContainer {
+  max-width: 262px;
+}
+.cards__container .cardBox__cards_item_imageContainer img {
+  width: 100%;
+  max-height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.cards__container .cardBox__cards_item_information {
+  padding: 22px 31px;
+}
+.cards__container .cardBox__cards_item_information_title {
+  font-size: 24px;
+  text-transform: uppercase;
+  line-height: 29px;
+}
+.cards__container .cardBox__cards_item_information_list {
+  margin-top: 42px;
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 6px;
+}
+.cards__container .cardBox__cards_item_information_list li {
+  font-size: 22px;
+  line-height: 26px;
+  color: #575757;
+}
+.cards__container .cardBox__cards_item_information_list li #size {
+  text-transform: uppercase;
+}
+.cards__container .cardBox__cards_item_information_list li input {
+  margin-left: 24px;
+  height: inherit;
+  text-align: center;
+  font-size: inherit;
+  width: 30%;
+  border: 1px solid #EAEAEA;
+}
+.cards__container .cardBox__cards_item_btnDelete {
+  font-size: 24px;
+  margin: 20px 20px 0 0;
+  transition: all, 0.3s;
+}
+.cards__container .cardBox__cards_item_btnDelete:hover {
+  color: #F16D7F;
+}
+.cards__container .cardBox__buttons {
+  display: grid;
+  margin-top: 72px;
+}
+.cards__container .cardBox__buttons_btnClear {
+  transition: all, 0.3s;
+  justify-self: center;
+  text-transform: uppercase;
+  font-weight: 300;
+  padding: 17px 39px;
+  border: 1px solid #A4A4A4;
+}
+.cards__container .cardBox__buttons_btnClear:hover {
+  color: white;
+  background-color: #F16D7F;
+}
+.cards__container .formBox {
+  grid-column: 3/4;
+  display: grid;
+  grid-template: minmax(auto, 306px)/1fr;
+  row-gap: 40px;
+}
+.cards__container .formBox__form {
+  align-self: center;
+}
+.cards__container .formBox__form_title {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+.cards__container .formBox__form_list {
+  margin-top: 20px;
+  display: grid;
+  grid-template: auto/1fr;
+  row-gap: 20px;
+}
+.cards__container .formBox__form_list li {
+  min-height: 45px;
+}
+.cards__container .formBox__form_list li input {
+  padding: 13px 17px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #A4A4A4;
+  font-size: 13px;
+}
+.cards__container .formBox__form_btn {
+  margin-top: 25px;
+  font-size: 11px;
+  line-height: 13px;
+  font-weight: 300;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  border: 1px solid #A4A4A4;
+  transition: all, 0.3s;
+}
+.cards__container .formBox__form_btn:hover {
+  color: #ffffff;
+  background-color: #F16D7F;
+}
+.cards__container .formBox__check {
+  height: 214px;
+  background: #F5F3F3;
+  padding: 42px;
+}
+.cards__container .formBox__check_priceBlock {
+  text-align: right;
+  border-bottom: 1px solid #E2E2E2;
+  padding-bottom: 21px;
+}
+.cards__container .formBox__check_priceBlock_discount {
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #4A4A4A;
+}
+.cards__container .formBox__check_priceBlock_discount #discount {
+  color: #F16D7F;
+}
+.cards__container .formBox__check_priceBlock_totalPrice {
+  margin-top: 12px;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+.cards__container .formBox__check_priceBlock_totalPrice #totalPrice {
+  color: #F16D7F;
+  font-weight: 700;
+}
+.cards__container .formBox__check_btn {
+  width: 100%;
+  margin-top: 17px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19px;
+  padding: 15px 41px;
+  color: #ffffff;
+  background-color: #F16D7F;
+  text-transform: uppercase;
+  border: 1px solid #A4A4A4;
+  transition: all, 0.3s;
+}
+.cards__container .formBox__check_btn:hover {
+  color: #F16D7F;
+  background-color: #ffffff;
+}
+
+/*  media queries for cards section start  */
+@media (max-width: 768px) {
+  .cards {
+    margin: 59px 0 128px 0;
+  }
+  .cards__container {
+    grid-template: auto/1fr;
+    justify-content: center;
+  }
+  .cards__container .cardBox__cards_item {
+    align-items: start;
+    grid-template-columns: 1fr 1fr auto;
+  }
+  .cards__container .cardBox__buttons {
+    margin-top: 62px;
+  }
+  .cards__container .formBox {
+    margin-top: 64px;
+    grid-column: 1/2;
+    display: grid;
+    grid-template: minmax(auto, 306px)/repeat(2, minmax(auto, 360px));
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media (max-width: 425px) {
+  .cards {
+    margin: 39px 0 96px 0;
+  }
+  .cards__container .cardBox__cards {
+    grid-template: auto/1fr;
+  }
+  .cards__container .cardBox__cards_item_information {
+    padding: 13px 17px;
+  }
+  .cards__container .cardBox__cards_item_information_title {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .cards__container .cardBox__cards_item_information_list {
+    margin-top: 25px;
+    row-gap: 4px;
+  }
+  .cards__container .cardBox__cards_item_information_list li {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .cards__container .cardBox__cards_item_btnDelete {
+    font-size: 24px;
+    margin: 20px 20px 0 0;
+    transition: all, 0.3s;
+  }
+  .cards__container .cardBox__buttons {
+    margin-top: 39px;
+  }
+  .cards__container .formBox {
+    margin-top: 48px;
+    grid-column: 1/2;
+    display: grid;
+    grid-template: auto/1fr;
+    justify-content: center;
+  }
+}
+@media (max-width: 320px) {
+  .cards__container .cardBox__cards_item_information {
+    padding: 4px 12px;
+  }
+  .cards__container .cardBox__cards_item_information_title {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .cards__container .cardBox__cards_item_information_list li {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .cards__container .cardBox__cards_item_btnDelete {
+    font-size: 18px;
+    margin: 8px 10px 0 0;
+  }
+}
+/*  media queries for cards section end  */
+/*    section review&subscrive start    */
+.reviewsAndSub {
+  position: relative;
+  background-image: url("/images/form_bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.reviewsAndSub__container {
+  position: relative;
+  display: grid;
+  align-items: center;
+  grid-template: minmax(auto, 448px)/1fr 1fr;
+}
+
+.reviewsAndSub::before {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  content: "";
+  background-color: rgba(244, 244, 244, 0.7);
+}
+
+.review {
+  justify-self: start;
+  display: grid;
+  min-height: 225px;
+  justify-items: center;
+  grid-template: auto 1fr/minmax(auto, 360px);
+}
+.review__textContainer {
+  margin-top: 30px;
+  text-align: center;
+}
+.review__textContainer_text {
+  font-size: 20px;
+  line-height: 24px;
+}
+.review__textContainer_text span {
+  font-style: italic;
+}
+
+.subscribeForm {
+  justify-self: center;
+  justify-items: center;
+  display: grid;
+  grid-template: 1fr auto/auto;
+}
+.subscribeForm__text {
+  display: grid;
+  text-align: center;
+  font-size: 18px;
+  line-height: 30px;
+}
+.subscribeForm__text_bold {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 38px;
+}
+.subscribeForm #form {
+  margin-top: 32px;
+  height: 49px;
+  display: flex;
+  width: 100%;
+}
+.subscribeForm #form #email {
+  height: 100%;
+  width: 100%;
+  border-radius: 25px 0 0 25px;
+  background-color: #E1E1E1;
+  padding: 7px 22px;
+  color: #222222;
+}
+.subscribeForm #form #btn_sub {
+  background-color: #F16D7F;
+  height: 100%;
+  padding: 0 22px;
+  color: #ffffff;
+  border-radius: 0 25px 25px 0;
+}
+
+/*    media queries    */
+@media (max-width: 768px) {
+  .reviewsAndSub__container {
+    padding-top: 64px;
+    padding-bottom: 140px;
+    justify-content: center;
+    grid-template: auto auto/1fr;
+  }
+
+  .review {
+    justify-self: center;
+  }
+
+  .subscribeForm {
+    margin-top: 48px;
+  }
+}
+@media (max-width: 425px) {
+  .reviewsAndSub__container {
+    padding-bottom: 110px;
+  }
+
+  .review__textContainer_text {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .subscribeForm {
+    grid-template: 1fr auto/1fr;
+    width: 100%;
+  }
+  .subscribeForm__text {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+/*    section review&subscrive end    */

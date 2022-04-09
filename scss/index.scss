@@ -1,0 +1,12 @@
+// Брейкпоинты
+$md1: 1024 + px; //ПК, ноутбуки, некоторые планшеты в горизонтальном положении
+$md2: 768 + px; // Планшеты, некоторые телефоны в горизонтальном положении
+$md3: 425+ px; // Телефоны L
+$md4: 320 + px; // Телефоны S
+
+//Импорты компонентов мейна
+@import "index_components/banners";
+@import "index_components/offers";
+@import "index_components/products";
+@import "index_components/guarantees";
+@import "index_components/review";

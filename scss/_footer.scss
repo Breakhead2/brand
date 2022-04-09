@@ -1,0 +1,70 @@
+//Переменные
+$bgColor: #222222;
+$mainColor: #ffffff;
+$secondColor: #F16D7F;
+$hoverColor: #F1E4E6;
+
+/*    section footer start   */
+
+.footer {
+    background-color: $bgColor;
+    &__container {
+        display: grid;
+        align-items: center;
+        grid-template: minmax(79px, auto) / 1fr 1fr;
+    }
+}
+.copyright {
+    color: #FBFBFB;
+    font-size: 16px;
+    line-height: 19px;
+
+}
+.footerMenu {
+    justify-self: end;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 8px;
+    &__link {
+        display: grid;
+        transition: all, .4s;
+        width: 32px;
+        height: 32px;
+        background-color: $mainColor;
+        place-content: center;
+        i {
+            font-size: 14px;
+        }
+    }
+    &__link:hover {
+        background-color: $secondColor;
+        i {
+            color: $mainColor;
+        }
+    }
+}
+
+/*    media queries    */
+
+@media (max-width: $md3){
+    .footer {
+        &__container {
+            display: grid;
+            align-items: center;
+            min-height: 143px;
+            grid-template: 1fr 1fr / 1fr;
+        }
+    }
+    .copyright {
+        grid-row: 2 / 3;
+        place-self: end center;
+        margin-bottom: 9px;
+    }
+    .footerMenu {
+        justify-self: center;
+        margin-top: 43px;
+        grid-row: 1 / 2;
+        }
+}
+
+/*    section footer end   */

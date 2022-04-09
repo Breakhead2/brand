@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font awesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/product.css" />
+
+    <!-- custom icon link -->
+    <link rel="shortcut icon" href="images/icon.png" />
+
+    <!-- custom js file link -->
+    <script src="js/main.js" defer></script>
+    <script src="js/product.js" defer></script>
+
+    <title>Product item</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- *header section start -->
+
+      <div class="header">
+        <div class="header__container">
+          <a class="logo" href="index.html" class="logo">
+            <img src="images/logo.png" alt="logotype" />
+          </a>
+
+          <nav class="navbar">
+            <ul class="menuList">
+              <li class="menu__item">
+                <a class="menu__link" href="catalog.html">men</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="catalog.html">women</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="catalog.html">kids</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="buttons">
+            <div class="fas fa-search" id="search_btn"></div>
+            <a href="registration.html" class="fas fa-user" id="user_btn"></a>
+            <div class="fas fa-shopping-cart" id="cart_btn">
+              <div class="cartIdentificator">
+                <span id="quantityItemsInCard">5</span>
+              </div>
+            </div>
+            <div class="fas fa-bars" id="menu_btn"></div>
+          </div>
+
+          <div class="searchForm">
+            <input type="search" id="search-box" placeholder="search here..." />
+            <label for="search-box" class="fas fa-search"></label>
+          </div>
+
+          <div class="cartContainer">
+            <div class="cartBox">
+              <div class="cartItem">
+                <a href="product.html">
+                  <img src="images/featured/image_item2.png" alt="item image" />
+                </a>
+                <div class="cartItem__info">
+                  <h3 class="cartItem__info__title">cart item 01</h3>
+                  <div class="cartItem__info__stars">
+                    <div class="fas fa-star"></div>
+                    <div class="fas fa-star"></div>
+                    <div class="fas fa-star"></div>
+                    <div class="fas fa-star"></div>
+                    <div class="fas fa-star"></div>
+                  </div>
+                  <div class="cartItem__info__price">
+                    <span id="quantity">1</span>
+                    X
+                    <span id="price">$250</span>
+                  </div>
+                </div>
+                <div class="fas fa-times-circle"></div>
+              </div>
+              <div class="cartItem">
+                <a href="product.html">
+                  <img src="images/featured/image_item1.png" alt="item image" />
+                </a>
+                <div class="cartItem__info">
+                  <h3 class="cartItem__info__title">cart item 02</h3>
+                  <div class="cartItem__info__stars">
+                    <div class="fas fa-star"></div>
+                    <div class="fas fa-star"></div>
+                    <div class="fas fa-star"></div>
+                    <div class="fas fa-star"></div>
+                    <div class="fas fa-star"></div>
+                  </div>
+                  <div class="cartItem__info__price">
+                    <span id="quantity">1</span>
+                    X
+                    <span id="price">$250</span>
+                  </div>
+                </div>
+                <div class="fas fa-times-circle"></div>
+              </div>
+            </div>
+
+            <div class="totalPrice">
+              <span class="totalPrice__text">total price</span>
+              <span id="total_price"> $500.00</span>
+            </div>
+
+            <a href="cart.html" class="cartBtn"> go to cart </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- *header section end -->
+
+      <main class="page">
+        <!-- *section navigation start -->
+        <section class="navigation">
+          <div class="navigation__container">
+            <a href="#" id="current">current item</a>
+            <div class="navigation_way">
+              <a href="index.html">home</a> / <a href="catalog.html">men</a> /
+              <a href="product.html" id="current">current item</a>
+            </div>
+          </div>
+        </section>
+        <!-- *section navigation end -->
+
+        <!-- section image gallery start -->
+        <section class="gallery">
+          <button class="btn_gallery" id="btn_left">
+            <i class="fas fa-chevron-up"></i>
+          </button>
+          <div class="gallery__container">
+            <div class="imageContainer">
+              <img src="images/item image/item_image_1.png" alt="item image" />
+            </div>
+          </div>
+          <button class="btn_gallery" id="btn_right">
+            <i class="fas fa-chevron-up"></i>
+          </button>
+        </section>
+        <!-- *section image gallery end -->
+
+        <!-- *section item info start -->
+
+        <section class="itemInfo">
+          <div class="itemInfo__container">
+            <div class="itemInfoBox">
+              <div class="itemDescription">
+                <h4 class="itemDescription__collection">women collection</h4>
+                <h3 class="itemDescription__title">moschino cheap and chic</h3>
+                <p class="itemDescription__description">
+                  Compellingly actualize fully researched processes before
+                  proactive outsourcing. Progressively syndicate collaborative
+                  architectures before cutting-edge services. Completely
+                  visualize parallel core competencies rather than exceptional
+                  portals.
+                </p>
+                <p class="itemDescription__price">$561</p>
+              </div>
+              <form class="itemForm" action="#">
+                <div class="itemForm__tools">
+                  <div class="itemForm__tool" box="box">
+                    <h4 class="itemForm__tool_heading" active="active">
+                      choose color <i class="fas fa-chevron-down"></i>
+                    </h4>
+                    <ul class="itemForm__tool_list">
+                      <li class="itemForm__tool_list_item">
+                        <label>
+                          <input type="checkbox" name="red" id="redColor" />Red
+                        </label>
+                      </li>
+                      <li class="itemForm__tool_list_item">
+                        <label>
+                          <input type="checkbox" id="orangeColor" />Orange
+                        </label>
+                      </li>
+                      <li class="itemForm__tool_list_item">
+                        <label>
+                          <input type="checkbox" id="yellowColor" />Yellow
+                        </label>
+                      </li>
+                      <li class="itemForm__tool_list_item">
+                        <label>
+                          <input type="checkbox" id="greenColor" />Green
+                        </label>
+                      </li>
+                      <li class="itemForm__tool_list_item">
+                        <label>
+                          <input type="checkbox" id="blueColor" />Blue
+                        </label>
+                      </li>
+                      <li class="itemForm__tool_list_item">
+                        <label>
+                          <input type="checkbox" id="whiteColor" />White
+                        </label>
+                      </li>
+                      <li class="itemForm__tool_list_item">
+                        <label>
+                          <input type="checkbox" id="blackColor" />Black
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="itemForm__tool" box="box">
+                    <h4 class="itemForm__tool_heading" active="active">
+                      choose size <i class="fas fa-chevron-down"></i>
+                    </h4>
+                    <ul class="itemForm__tool_list">
+                      <li class="itemForm__tool_list_item">
+                        <label> <input type="checkbox" id="xxs" />xxs </label>
+                      </li>
+                      <li class="itemForm__tool_list_item">
+                        <label> <input type="checkbox" id="xs" />xs </label>
+                      </li>
+                      <li class="itemForm__tool_list_item">
+                        <label> <input type="checkbox" id="s" />s </label>
+                      </li>
+                      <li class="itemForm__tool_list_item">
+                        <label> <input type="checkbox" id="m" />m </label>
+                      </li>
+                      <li class="itemForm__tool_list_item">
+                        <label> <input type="checkbox" id="l" />l </label>
+                      </li>
+                      <li class="itemForm__tool_list_item">
+                        <label> <input type="checkbox" id="xl" />xl </label>
+                      </li>
+                      <li class="itemForm__tool_list_item">
+                        <label> <input type="checkbox" id="xxl" />xxl </label>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="itemForm__tool" box="box">
+                    <h4 class="itemForm__tool_heading" active="active">
+                      quantity <i class="fas fa-chevron-down"></i>
+                    </h4>
+                    <ul class="itemForm__tool_list">
+                      <li class="itemForm__tool_list_item">
+                        <input
+                          class="numberInput"
+                          type="number"
+                          id="quantity"
+                          placeholder="quantity"
+                        />
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <button class="itemForm__addToCart">
+                  <i class="fas fa-shopping-cart"></i>Add to Cart
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <!-- *section item info end -->
+
+        <!-- *section products start -->
+
+        <section class="products">
+          <div class="products__container">
+            <div class="productsBox">
+              <div class="productsItem">
+                <a href="product.html" class="productsItem imageContainer">
+                  <img
+                    src="images/image items/image_item1.png"
+                    alt="image product"
+                  />
+                </a>
+                <div class="productsItem__textContainer">
+                  <h4 class="productsItem__textContainer__heading">
+                    Lorem ipsum dolor sit.
+                  </h4>
+                  <p class="productsItem__textContainer__text">
+                    Known for her sculptural takes on traditional tailoring
+                  </p>
+                </div>
+                <div class="productsItem__button">
+                  <p class="productsItem__button_price">$52.00</p>
+                  <button id="add_cart">
+                    <i class="fas fa-shopping-cart"></i>Add to Cart
+                  </button>
+                </div>
+              </div>
+              <div class="productsItem">
+                <a href="product.html" class="productsItem imageContainer">
+                  <img
+                    src="images/image items/image_item2.png"
+                    alt="image product"
+                  />
+                </a>
+                <div class="productsItem__textContainer">
+                  <h4 class="productsItem__textContainer__heading">
+                    Lorem ipsum dolor sit.
+                  </h4>
+                  <p class="productsItem__textContainer__text">
+                    Known for her sculptural takes on traditional tailoring
+                  </p>
+                </div>
+                <div class="productsItem__button">
+                  <p class="productsItem__button_price">$52.00</p>
+                  <button id="add_cart">
+                    <i class="fas fa-shopping-cart"></i>Add to Cart
+                  </button>
+                </div>
+              </div>
+              <div class="productsItem">
+                <a href="product.html" class="productsItem imageContainer">
+                  <img
+                    src="images/image items/image_item3.png"
+                    alt="image product"
+                  />
+                </a>
+                <div class="productsItem__textContainer">
+                  <h4 class="productsItem__textContainer__heading">
+                    Lorem ipsum dolor sit.
+                  </h4>
+                  <p class="productsItem__textContainer__text">
+                    Known for her sculptural takes on traditional tailoring
+                  </p>
+                </div>
+                <div class="productsItem__button">
+                  <p class="productsItem__button_price">$52.00</p>
+                  <button id="add_cart">
+                    <i class="fas fa-shopping-cart"></i>Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- *section products end -->
+
+        <!-- *section review-subscribe start -->
+
+        <section class="reviewsAndSub">
+          <div class="reviewsAndSub__container">
+            <div class="review">
+              <div class="review__imageContainer">
+                <img src="images/Intersect.png" alt="user_photo" />
+              </div>
+              <div class="review__textContainer">
+                <p class="review__textContainer_text">
+                  “Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+                  <span> a pulvinar purus condimentum“</span>
+                </p>
+              </div>
+            </div>
+            <div class="subscribeForm">
+              <p class="subscribeForm__text">
+                <span class="subscribeForm__text_bold">SUBSCRIBE</span>
+                FOR OUR NEWLETTER AND PROMOTION
+              </p>
+              <form action="#" id="form">
+                <input id="email" type="email" placeholder="Enter your email" />
+                <button id="btn_sub" type="submit">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <!-- *ection review-subscribe end -->
+      </main>
+
+      <!-- *section footer start -->
+
+      <footer class="footer">
+        <div class="footer__container">
+          <p class="copyright">© 2021 Brand All Rights Reserved.</p>
+          <nav class="footerMenu">
+            <a class="footerMenu__link" href="#"
+              ><i class="fab fa-facebook-f"></i>
+            </a>
+            <a class="footerMenu__link" href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a class="footerMenu__link" href="#">
+              <i class="fab fa-pinterest-p"></i>
+            </a>
+            <a class="footerMenu__link" href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </nav>
+        </div>
+      </footer>
+
+      <!-- *section footer end -->
+    </div>
+  </body>
+</html>

@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font awesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/catalog.css" />
+
+    <!-- custom icon link -->
+    <link rel="shortcut icon" href="images/icon.png" />
+
+    <!-- custom js file link -->
+    <script src="js/main.js" defer></script>
+    <script src="js/catalog.js" defer></script>
+
+    <title>Catalog</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- *header section start -->
+
+      <div class="header">
+        <div class="header__container">
+          <a class="logo" href="index.html" class="logo">
+            <img src="images/logo.png" alt="logotype" />
+          </a>
+
+          <nav class="navbar">
+            <ul class="menuList">
+              <li class="menu__item">
+                <a class="menu__link" href="catalog.html">men</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="catalog.html">women</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="catalog.html">kids</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="buttons">
+            <div class="fas fa-search" id="search_btn"></div>
+            <a href="registration.html" class="fas fa-user" id="user_btn"></a>
+            <div class="fas fa-shopping-cart" id="cart_btn">
+              <div class="cartIdentificator">
+                <span id="quantityItemsInCard">5</span>
+              </div>
+            </div>
+            <div class="fas fa-bars" id="menu_btn"></div>
+          </div>
+
+          <div class="searchForm">
+            <input type="search" id="search-box" placeholder="search here..." />
+            <label for="search-box" class="fas fa-search"></label>
+          </div>
+
+          <div class="cartContainer">
+            <div class="cartBox">
+              <div class="cartItem">
+                <a href="product.html">
+                  <img src="images/featured/image_item2.png" alt="item image" />
+                </a>
+                <div class="cartItem__info">
+                  <h3 class="cartItem__info__title">cart item 01</h3>
+                  <div class="cartItem__info__stars">
+                    <div class="fas fa-star"></div>
+                    <div class="fas fa-star"></div>
+                    <div class="fas fa-star"></div>
+                    <div class="fas fa-star"></div>
+                    <div class="fas fa-star"></div>
+                  </div>
+                  <div class="cartItem__info__price">
+                    <span id="quantity">1</span>
+                    X
+                    <span id="price">$250</span>
+                  </div>
+                </div>
+                <div class="fas fa-times-circle"></div>
+              </div>
+              <div class="cartItem">
+                <a href="product.html">
+                  <img src="images/featured/image_item1.png" alt="item image" />
+                </a>
+                <div class="cartItem__info">
+                  <h3 class="cartItem__info__title">cart item 02</h3>
+                  <div class="cartItem__info__stars">
+                    <div class="fas fa-star"></div>
+                    <div class="fas fa-star"></div>
+                    <div class="fas fa-star"></div>
+                    <div class="fas fa-star"></div>
+                    <div class="fas fa-star"></div>
+                  </div>
+                  <div class="cartItem__info__price">
+                    <span id="quantity">1</span>
+                    X
+                    <span id="price">$250</span>
+                  </div>
+                </div>
+                <div class="fas fa-times-circle"></div>
+              </div>
+            </div>
+
+            <div class="totalPrice">
+              <span class="totalPrice__text">total price</span>
+              <span id="total_price"> $500.00</span>
+            </div>
+
+            <a href="cart.html" class="cartBtn"> go to cart </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- *header section end -->
+
+      <main class="page">
+        <!-- *section navigation start -->
+        <section class="navigation">
+          <div class="navigation__container">
+            <a href="#" id="current">men</a>
+            <div class="navigation_way">
+              <a href="index.html">home</a> /
+              <a href="product.html" id="current"> men</a>
+            </div>
+          </div>
+        </section>
+        <!-- *section navigation end -->
+
+        <!-- *section filter tools start -->
+
+        <section class="filterTools">
+          <div class="filterTools__container">
+            <div class="filterBox" box="box">
+              <p class="filterBox__title" active="active">
+                Filter<i class="fas fa-sort"></i>
+              </p>
+
+              <div class="filterBox__details">
+                <details class="filterBox__details_catalog">
+                  <summary>catalog</summary>
+                  <ul class="filterBox__details_list">
+                    <li>
+                      <a class="filterBox__details_link" href="#"
+                        >Accessories</a
+                      >
+                    </li>
+                    <li>
+                      <a class="filterBox__details_link" href="#">Bags</a>
+                    </li>
+                    <li>
+                      <a class="filterBox__details_link" href="#">Suits</a>
+                    </li>
+                    <li>
+                      <a class="filterBox__details_link" href="#"
+                        >Hoodies & Sweatshirts</a
+                      >
+                    </li>
+                    <li>
+                      <a class="filterBox__details_link" href="#"
+                        >Jackets & Coats</a
+                      >
+                    </li>
+                    <li>
+                      <a class="filterBox__details_link" href="#">Polos</a>
+                    </li>
+                    <li>
+                      <a class="filterBox__details_link" href="#">Shirts</a>
+                    </li>
+                    <li>
+                      <a class="filterBox__details_link" href="#">Shoes</a>
+                    </li>
+                    <li>
+                      <a class="filterBox__details_link" href="#"
+                        >Sweaters & Knits</a
+                      >
+                    </li>
+                    <li>
+                      <a class="filterBox__details_link" href="#">T-Shirts</a>
+                    </li>
+                    <li>
+                      <a class="filterBox__details_link" href="#">Tanks</a>
+                    </li>
+                  </ul>
+                </details>
+                <details class="filterBox__details_catalog">
+                  <summary>brand</summary>
+                  <ul class="filterBox__details_list">
+                    <li>
+                      <a class="filterBox__details_link" href="#">Lorem</a>
+                    </li>
+                    <li>
+                      <a class="filterBox__details_link" href="#">Ipsum</a>
+                    </li>
+                    <li>
+                      <a class="filterBox__details_link" href="#">Dolor</a>
+                    </li>
+                    <li><a class="filterBox__details_link" href="#">Sit</a></li>
+                    <li>
+                      <a class="filterBox__details_link" href="#">Amet</a>
+                    </li>
+                  </ul>
+                </details>
+                <details class="filterBox__details_catalog">
+                  <summary>designer</summary>
+                  <ul class="filterBox__details_list">
+                    <li>
+                      <a class="filterBox__details_link" href="#">Lorem</a>
+                    </li>
+                    <li>
+                      <a class="filterBox__details_link" href="#">Ipsum</a>
+                    </li>
+                    <li>
+                      <a class="filterBox__details_link" href="#">Dolor</a>
+                    </li>
+                    <li><a class="filterBox__details_link" href="#">Sit</a></li>
+                    <li>
+                      <a class="filterBox__details_link" href="#">Amet</a>
+                    </li>
+                  </ul>
+                </details>
+              </div>
+            </div>
+
+            <div class="another__filters">
+              <div class="filterBox__item" box="box">
+                <h4 class="filterBox__item_title" active="active">
+                  Trending now<i class="fas fa-chevron-down"></i>
+                </h4>
+                <ul class="filterBox__item_list">
+                  <li>
+                    <label
+                      ><input type="checkbox" id="bohemian" />Bohemian</label
+                    >
+                  </li>
+                  <li>
+                    <label><input type="checkbox" id="florial" />Florial</label>
+                  </li>
+                  <li>
+                    <label><input type="checkbox" id="lace" />Lace</label>
+                  </li>
+                  <li>
+                    <label><input type="checkbox" id="lorem" />Lorem</label>
+                  </li>
+                  <li>
+                    <label><input type="checkbox" id="ipsum" />Ipsum</label>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="filterBox__item" box="box">
+                <h4 class="filterBox__item_title" active="active">
+                  Size<i class="fas fa-chevron-down"></i>
+                </h4>
+                <ul class="filterBox__item_list">
+                  <li>
+                    <label><input type="checkbox" id="xxs" />xxs</label>
+                  </li>
+                  <li>
+                    <label><input type="checkbox" id="xs" />xs</label>
+                  </li>
+                  <li>
+                    <label><input type="checkbox" id="s" />s</label>
+                  </li>
+                  <li>
+                    <label><input type="checkbox" id="m" />m</label>
+                  </li>
+                  <li>
+                    <label><input type="checkbox" id="l" />l</label>
+                  </li>
+                  <li>
+                    <label><input type="checkbox" id="xl" />xl</label>
+                  </li>
+                  <li>
+                    <label><input type="checkbox" id="xxl" />xxl</label>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="filterBox__item" box="box">
+                <h4 class="filterBox__item_title" active="active">
+                  Show by <i class="fas fa-chevron-down"></i>
+                </h4>
+                <ul class="filterBox__item_list">
+                  <li>
+                    <label><input type="checkbox" id="nine_carts" />9</label>
+                  </li>
+                  <li>
+                    <label><input type="checkbox" id="twelve_carts" />12</label>
+                  </li>
+                  <li>
+                    <label
+                      ><input type="checkbox" id="fifteen_carts" />15</label
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- *section filter tools end -->
+
+        <!-- *section products start -->
+
+        <section class="products">
+          <div class="products__container">
+            <div class="productsBox">
+              <div class="productsItem">
+                <a href="product.html" class="productsItem imageContainer">
+                  <img src="images/men/men_image_1.png" alt="image product" />
+                </a>
+                <div class="productsItem__textContainer">
+                  <h4 class="productsItem__textContainer__heading">
+                    Lorem ipsum dolor sit.
+                  </h4>
+                  <p class="productsItem__textContainer__text">
+                    Known for her sculptural takes on traditional tailoring
+                  </p>
+                </div>
+                <div class="productsItem__button">
+                  <p class="productsItem__button_price">$52.00</p>
+                  <button id="add_cart">
+                    <i class="fas fa-shopping-cart"></i>Add to Cart
+                  </button>
+                </div>
+              </div>
+              <div class="productsItem">
+                <a href="product.html" class="productsItem imageContainer">
+                  <img src="images/men/men_image_2.png" alt="image product" />
+                </a>
+                <div class="productsItem__textContainer">
+                  <h4 class="productsItem__textContainer__heading">
+                    Lorem ipsum dolor sit.
+                  </h4>
+                  <p class="productsItem__textContainer__text">
+                    Known for her sculptural takes on traditional tailoring
+                  </p>
+                </div>
+                <div class="productsItem__button">
+                  <p class="productsItem__button_price">$52.00</p>
+                  <button id="add_cart">
+                    <i class="fas fa-shopping-cart"></i>Add to Cart
+                  </button>
+                </div>
+              </div>
+              <div class="productsItem">
+                <a href="product.html" class="productsItem imageContainer">
+                  <img src="images/men/men_image_3.png" alt="image product" />
+                </a>
+                <div class="productsItem__textContainer">
+                  <h4 class="productsItem__textContainer__heading">
+                    Lorem ipsum dolor sit.
+                  </h4>
+                  <p class="productsItem__textContainer__text">
+                    Known for her sculptural takes on traditional tailoring
+                  </p>
+                </div>
+                <div class="productsItem__button">
+                  <p class="productsItem__button_price">$52.00</p>
+                  <button id="add_cart">
+                    <i class="fas fa-shopping-cart"></i>Add to Cart
+                  </button>
+                </div>
+              </div>
+              <div class="productsItem">
+                <a href="product.html" class="productsItem imageContainer">
+                  <img src="images/men/men_image_4.png" alt="image product" />
+                </a>
+                <div class="productsItem__textContainer">
+                  <h4 class="productsItem__textContainer__heading">
+                    Lorem ipsum dolor sit.
+                  </h4>
+                  <p class="productsItem__textContainer__text">
+                    Known for her sculptural takes on traditional tailoring
+                  </p>
+                </div>
+                <div class="productsItem__button">
+                  <p class="productsItem__button_price">$52.00</p>
+                  <button id="add_cart">
+                    <i class="fas fa-shopping-cart"></i>Add to Cart
+                  </button>
+                </div>
+              </div>
+              <div class="productsItem">
+                <a href="product.html" class="productsItem imageContainer">
+                  <img src="images/men/men_image_5.png" alt="image product" />
+                </a>
+                <div class="productsItem__textContainer">
+                  <h4 class="productsItem__textContainer__heading">
+                    Lorem ipsum dolor sit.
+                  </h4>
+                  <p class="productsItem__textContainer__text">
+                    Known for her sculptural takes on traditional tailoring
+                  </p>
+                </div>
+                <div class="productsItem__button">
+                  <p class="productsItem__button_price">$52.00</p>
+                  <button id="add_cart">
+                    <i class="fas fa-shopping-cart"></i>Add to Cart
+                  </button>
+                </div>
+              </div>
+              <div class="productsItem">
+                <a href="product.html" class="productsItem imageContainer">
+                  <img src="images/men/men_image_6.png" alt="image product" />
+                </a>
+                <div class="productsItem__textContainer">
+                  <h4 class="productsItem__textContainer__heading">
+                    Lorem ipsum dolor sit.
+                  </h4>
+                  <p class="productsItem__textContainer__text">
+                    Known for her sculptural takes on traditional tailoring
+                  </p>
+                </div>
+                <div class="productsItem__button">
+                  <p class="productsItem__button_price">$52.00</p>
+                  <button id="add_cart">
+                    <i class="fas fa-shopping-cart"></i>Add to Cart
+                  </button>
+                </div>
+              </div>
+              <div class="productsItem">
+                <a href="product.html" class="productsItem imageContainer">
+                  <img src="images/men/men_image_7.png" alt="image product" />
+                </a>
+                <div class="productsItem__textContainer">
+                  <h4 class="productsItem__textContainer__heading">
+                    Lorem ipsum dolor sit.
+                  </h4>
+                  <p class="productsItem__textContainer__text">
+                    Known for her sculptural takes on traditional tailoring
+                  </p>
+                </div>
+                <div class="productsItem__button">
+                  <p class="productsItem__button_price">$52.00</p>
+                  <button id="add_cart">
+                    <i class="fas fa-shopping-cart"></i>Add to Cart
+                  </button>
+                </div>
+              </div>
+              <div class="productsItem">
+                <a href="product.html" class="productsItem imageContainer">
+                  <img src="images/men/men_image_8.png" alt="image product" />
+                </a>
+                <div class="productsItem__textContainer">
+                  <h4 class="productsItem__textContainer__heading">
+                    Lorem ipsum dolor sit.
+                  </h4>
+                  <p class="productsItem__textContainer__text">
+                    Known for her sculptural takes on traditional tailoring
+                  </p>
+                </div>
+                <div class="productsItem__button">
+                  <p class="productsItem__button_price">$52.00</p>
+                  <button id="add_cart">
+                    <i class="fas fa-shopping-cart"></i>Add to Cart
+                  </button>
+                </div>
+              </div>
+              <div class="productsItem">
+                <a href="product.html" class="productsItem imageContainer">
+                  <img src="images/men/men_image_9.png" alt="image product" />
+                </a>
+                <div class="productsItem__textContainer">
+                  <h4 class="productsItem__textContainer__heading">
+                    Lorem ipsum dolor sit.
+                  </h4>
+                  <p class="productsItem__textContainer__text">
+                    Known for her sculptural takes on traditional tailoring
+                  </p>
+                </div>
+                <div class="productsItem__button">
+                  <p class="productsItem__button_price">$52.00</p>
+                  <button id="add_cart">
+                    <i class="fas fa-shopping-cart"></i>Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <ul class="pagination">
+              <li class="pagination_item">
+                <i class="fas fa-chevron-left"></i>
+              </li>
+              <li class="pagination_item">1</li>
+              <li class="pagination_item">2</li>
+              <li class="pagination_item">3</li>
+              <li class="pagination_item">4</li>
+              <li class="pagination_item">5</li>
+              <li class="pagination_item">6</li>
+              <li class="pagination_item points">...</li>
+              <li class="pagination_item">last</li>
+              <li class="pagination_item">
+                <i class="fas fa-chevron-right"></i>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- *section products end -->
+        <!-- *section guarantees start -->
+
+        <section class="guarantees">
+          <div class="guarantees__container">
+            <div class="guarenteesBox">
+              <div class="guarenteesBox__item">
+                <div class="guarenteesBox__item_imageContainer">
+                  <img src="images/delivery.png" alt="delivery" />
+                </div>
+                <div class="guarenteesBox__item_textContainer">
+                  <h4 class="guarenteesBox__item_textContainer_heading">
+                    Free Delivery
+                  </h4>
+                  <p class="guarenteesBox__item_textContainer_text">
+                    Worldwide delivery on all. Authorit tively morph
+                    next-generation innov tion with extensive models.
+                  </p>
+                </div>
+              </div>
+              <div class="guarenteesBox__item">
+                <div class="guarenteesBox__item_imageContainer">
+                  <img src="images/sales.png" alt="delivery" />
+                </div>
+                <div class="guarenteesBox__item_textContainer">
+                  <h4 class="guarenteesBox__item_textContainer_heading">
+                    Free Delivery
+                    <!-- Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit. Facere, cum? -->
+                  </h4>
+                  <p class="guarenteesBox__item_textContainer_text">
+                    Worldwide delivery on all. Authorit tively morph
+                    next-generation innov tion with extensive models.
+                  </p>
+                </div>
+              </div>
+
+              <div class="guarenteesBox__item">
+                <div class="imageContainer">
+                  <img src="images/quality.png" alt="sales" />
+                </div>
+                <div class="guarenteesBox__item_textContainer">
+                  <h4 class="guarenteesBox__item_textContainer_heading">
+                    Sales & discounts
+                  </h4>
+                  <p class="guarenteesBox__item_textContainer_text">
+                    Worldwide delivery on all. Authorit tively morph
+                    next-generation innov tion with extensive models.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- *section guarantees end -->
+
+        <!-- *section review-subscribe start -->
+
+        <section class="reviewsAndSub">
+          <div class="reviewsAndSub__container">
+            <div class="review">
+              <div class="review__imageContainer">
+                <img src="images/Intersect.png" alt="user_photo" />
+              </div>
+              <div class="review__textContainer">
+                <p class="review__textContainer_text">
+                  “Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+                  <span> a pulvinar purus condimentum“</span>
+                </p>
+              </div>
+            </div>
+            <div class="subscribeForm">
+              <p class="subscribeForm__text">
+                <span class="subscribeForm__text_bold">SUBSCRIBE</span>
+                FOR OUR NEWLETTER AND PROMOTION
+              </p>
+              <form action="#" id="form">
+                <input id="email" type="email" placeholder="Enter your email" />
+                <button id="btn_sub" type="submit">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <!-- *ection review-subscribe end -->
+      </main>
+
+      <!-- *section footer start -->
+
+      <footer class="footer">
+        <div class="footer__container">
+          <p class="copyright">© 2021 Brand All Rights Reserved.</p>
+          <nav class="footerMenu">
+            <a class="footerMenu__link" href="#"
+              ><i class="fab fa-facebook-f"></i>
+            </a>
+            <a class="footerMenu__link" href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a class="footerMenu__link" href="#">
+              <i class="fab fa-pinterest-p"></i>
+            </a>
+            <a class="footerMenu__link" href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </nav>
+        </div>
+      </footer>
+
+      <!-- *section footer end -->
+    </div>
+  </body>
+</html>
